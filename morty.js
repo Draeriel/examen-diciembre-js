@@ -21,8 +21,4 @@ function createMorty() {
 
 exports.mortyMaker = function() {
     return createMorty();
-};
-
-exports.setPartner = function(Morty, partner) {
-    Morty['partner'] = partner;
 }

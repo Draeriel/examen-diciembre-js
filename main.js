@@ -3,6 +3,7 @@
  */
 var rickModel = require('./rick');
 var mortyModel = require('./morty');
+var jerryModel = require('./jerry');
 
 
 /**
@@ -33,6 +34,8 @@ console.assert(protoMorty.habla == "Oohh man!");
 /**
  * Crea el objeto Jerry
  */
+var newJerry = jerryModel.jerryMaker();
+var jerry = newJerry.getJerry();
 
 console.assert(jerry);
 console.assert(jerry.id = "Jerry");
