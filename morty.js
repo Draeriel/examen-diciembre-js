@@ -8,17 +8,6 @@ Morty.prototype.setPartner = function(partner) {
     this.partner = partner;
 }
 
-function createMorty() {
-    
-    const newMorty = new Morty();
-
-    return { 
-        getMorty :function getMorty() {
-            return newMorty;
-        }
-    };
-}
-
 exports.mortyMaker = function() {
-    return createMorty();
+    return new Morty();
 }

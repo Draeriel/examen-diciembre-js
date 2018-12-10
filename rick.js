@@ -4,17 +4,10 @@ function Rick() {
     this.habla = 'Es Rick-dículo!';
 }
 
-function createRick() {
-    
-    const newRick = new Rick();
-
-    return { 
-        getRick :function getRick() {
-            return newRick;
-        }
-    };
+Rick.prototype.shot = function(weapon, currentLocation, newLocation, universe) {
+    weapon.use(currentLocation, newLocation, universe);
 }
 
 exports.rickMaker = function() {
-    return createRick();
+    return new Rick();
 };

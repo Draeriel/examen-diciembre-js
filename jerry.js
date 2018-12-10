@@ -6,6 +6,9 @@ function Jerry() {
 Jerry.prototype.speak = function() {
     return this.habla;
 }
+Jerry.prototype.getMonedas = function() {
+    return this.monedas;
+}
 
 function createJerry() {
     
